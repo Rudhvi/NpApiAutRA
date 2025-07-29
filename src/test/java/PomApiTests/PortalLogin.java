@@ -7,12 +7,12 @@ import PomApiTests.FIles.TestConstants;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
-public class UserLogin {
+public class PortalLogin {
 
     public static Response loginUser(){
         Map<String, Object> requestBody = new HashMap<>();
-        requestBody.put("UserName", PomApiTests.FIles.TestConstants.UserName);
-        requestBody.put("PassWord", PomApiTests.FIles.TestConstants.PassWord);
+        requestBody.put("username", PomApiTests.FIles.TestConstants.UserName);
+        requestBody.put("password", PomApiTests.FIles.TestConstants.PassWord);
 
 
         return given()
