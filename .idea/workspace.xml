@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd159707-0b3e-44b7-8d32-674ea65901ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PomApiTests/FIles/Utilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PomApiTests/FIles/ConfigReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PomApiTests/FIles/UserVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PomApiTests/OTPverify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PomApiTests/RegistrationAttempt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PomApiTests/FIles/ApiPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PomApiTests/FIles/ApiPaths.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PomApiTests/FIles/ApiSpecifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PomApiTests/FIles/ApiSpecifications.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PomApiTests/FIles/TestConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PomApiTests/FIles/TestConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PomApiTests/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PomApiTests/UserLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PomApiTests/FIles/TestConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PomApiTests/FIles/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PomApiTests/FIles/Utilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PomApiTests/PortalLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PomApiTests/PortalLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

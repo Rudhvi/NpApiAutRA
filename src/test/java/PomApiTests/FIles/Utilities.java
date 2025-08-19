@@ -1,18 +1,29 @@
 package PomApiTests.FIles;
 
-import com.sun.org.apache.xpath.internal.objects.XString;
+import java.util.Random;
 
-/*
 public class Utilities {
-    private static final String characters= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    private static final int Length=16;
-    private static final secureRandom RANDOM = new securerandom();
 
-    public static String generateRandomString(){
-        StringBuilder sb= new StringBuilder(Length);
+    public static String generateRandomMobileNumber() {
+        Random random = new Random();
+        StringBuilder mobile = new StringBuilder();
+
+        // 1st and 2nd digits: "01"
+        mobile.append("01");
+
+        // 3rd digit: randomly pick from allowed digits
+        int[] allowedThirdDigits = {7, 8, 6, 3, 5};
+        int thirdDigit = allowedThirdDigits[random.nextInt(allowedThirdDigits.length)];
+        mobile.append(thirdDigit);
+
+        // 4th–7th digits: fixed zeros
+        mobile.append("0000");
+
+        // 8th–11th digits: random 4 digits
+        for (int i = 0; i < 4; i++) {
+            mobile.append(random.nextInt(10)); // 0–9
+        }
+
+        return mobile.toString();
     }
-
-
-
 }
-*/

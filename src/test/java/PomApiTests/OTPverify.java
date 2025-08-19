@@ -1,18 +1,24 @@
 package PomApiTests;
 
-import java.util.HashMap;
-import java.util.Map;
 import PomApiTests.FIles.ApiPaths;
 import PomApiTests.FIles.ConfigReader;
 import io.restassured.response.Response;
+
+import java.util.HashMap;
+import java.util.Map;
+import PomApiTests.FIles.UserVariables;
 import static io.restassured.RestAssured.given;
 
-public class PortalLogin {
+public class OTPverify {
 
-    public static Response loginUser(){
+    public static Response otpVerify(){
+
+        String mobileNumber= UserVariables.getInstance().getMobileNumber();
+
         Map<String, Object> requestBody = new HashMap<>();
-        requestBody.put("username", ConfigReader.get("UserName"));
-        requestBody.put("password", ConfigReader.get("PassWord"));
+        requestBody.put("otp", ConfigReader.get("OTP"));
+        requestBody.put("mobile_number", mobileNumber);
+        requestBody.put("otp_type", ConfigReader.get("OtpType"));
 
         return given()
                 .baseUri(ApiPaths.ApiGwBaseUrl)
@@ -23,8 +29,7 @@ public class PortalLogin {
                 .log().body()
 
                 .when()
-                .post(ApiPaths.loginPath);
+                .post(ApiPaths.OtpVerifyPath);
     }
 
 }
-
